@@ -36,10 +36,10 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="footer-content">
           <div className="footer-links">
-            <Link to="/" className="footer-link" onClick={scrollToTop}>
+            <Link to="/encuestasHenry" className="footer-link" onClick={scrollToTop}>
               Inicio
             </Link>
-            <Link to="/encuestas" className="footer-link" onClick={scrollToTop}>
+            <Link to="/encuestasHenry/encuestas" className="footer-link" onClick={scrollToTop}>
               Encuestas
             </Link>
             <a href="https://daniels35.com/" target="_blank" className="footer-link" onClick={scrollToTop}>
