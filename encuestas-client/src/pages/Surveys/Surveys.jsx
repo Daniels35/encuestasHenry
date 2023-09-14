@@ -32,7 +32,7 @@ function Surveys() {
           <ul className="Surveys-list">
             {encuestas.map((encuesta) => (
               <li key={encuesta.id} className="Surveys-item">
-                <Link to={`/encuestas/${encuesta.id}`} className="Surveys-link">
+                <Link to={`/encuestasHenry/encuestas/${encuesta.id}`} className="Surveys-link">
                   <span>Nombre:</span>
                   <p>{encuesta.full_name}</p>
                   <span>Lenguaje favorito:</span>

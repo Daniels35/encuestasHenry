@@ -351,7 +351,7 @@ function SurveysDetail() {
         <p>Los detalles de la encuesta no están disponibles.</p>
       )}
      
-      <Link to="/encuestas" className="SurveysDetail-link">Volver a la lista de encuestas</Link>
+      <Link to="/encuestasHenry/encuestas" className="SurveysDetail-link">Volver a la lista de encuestas</Link>
     </div>
   );
 }

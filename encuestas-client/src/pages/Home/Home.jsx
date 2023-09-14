@@ -54,7 +54,7 @@ function Home() {
         console.log('Encuesta enviada con éxito');
         window.alert("Encuesta enviada con éxito, pronto recibirás un correo electrónico con tus respuestas, te vamos a redirigir a tu encuesta.");
         const data = await response.json();
-        navigate(`/encuestas/${data.insertedId}`, { state: { redirigido: true } });
+        navigate(`/encuestasHenry/encuestas/${data.insertedId}`, { state: { redirigido: true } });
         console.log("Id de la encuesta: ", data.insertedId)
       } else {
         console.error('Error al enviar la encuesta al servidor');
