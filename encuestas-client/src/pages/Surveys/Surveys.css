@@ -38,11 +38,14 @@
   .Surveys-item p {
     margin: 0;
   }
+
+  .Surveys-item span {
+    font-weight: bold;
+  }
   
   .Surveys-link {
     text-decoration: none;
     color: gray;
-    font-weight: bold;
     user-select: none;
   }
   

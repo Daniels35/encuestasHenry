@@ -103,6 +103,10 @@
     .Home-contenedor {
         width: 100%;
     }
+
+    .Home-contenedor h2{
+      font-size: 18px;
+    }
     .form-home-container {
         max-width: 70%; 
     }
