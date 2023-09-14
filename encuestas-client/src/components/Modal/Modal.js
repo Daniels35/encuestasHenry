@@ -30,8 +30,8 @@ const Modal = ({ children, isVisible, onClose }) => {
           {children}
           <button onClick={onClose} style={{
             position: 'absolute',
-            top: '-15px',
-            right: '-5px',
+            top: '10px',
+            right: '10px',
             backgroundColor: 'transparent',
             border: 'none',
             fontSize: '30px',

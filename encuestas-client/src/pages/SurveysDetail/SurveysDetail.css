@@ -5,7 +5,6 @@
     margin: 0;
     color: gray;
     flex-direction: column;
-    padding: 20px; 
     height: 100%;
   }
 
@@ -90,6 +89,27 @@ align-items: center;
   .button-surveyEdit-not:hover {
     cursor: pointer;
     transform: scale(1.5);
+  }
+
+  .input-survey-modal {
+    width: 120px;
+  }
+
+  .button-survey-modal {
+    background-color: #ffff01;
+    font-weight: bolder;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    min-width: 150px;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .button-survey-modal:hover {
+    cursor: pointer;
+    transform: scale(1.3);
   }
   
   @media (max-width: 486px) {
