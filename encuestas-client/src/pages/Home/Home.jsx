@@ -84,7 +84,9 @@ function Home() {
 
   return (
     <div className='Home-contenedor'>
+      <div className='home-contenedor-title'>
       <h2>Formulario de Encuesta</h2>
+      </div>
       <form onSubmit={handleSubmit} className='form-home-container'>
         {surveyForm.items.map((item, index) => (
           <div key={index}>
