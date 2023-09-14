@@ -1,0 +1,63 @@
+.Surveys-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    color: gray;
+    min-height: 100%;
+  }
+  
+  .Surveys-contenedor h2 {
+    color: white;
+    opacity: 0.9;
+  }
+  
+  .Surveys-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Surveys-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ffff01;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin-bottom: 50px;
+    min-width: 400px;
+    transition: transform 0.5s ease-in-out;
+    user-select: none;
+  }
+
+  .Surveys-item:hover {
+    transform: scale(1.2);
+  }
+  
+  .Surveys-item p {
+    margin: 0;
+  }
+  
+  .Surveys-link {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    user-select: none;
+  }
+  
+  .Surveys-link:hover {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 486px) {
+    .Surveys-contenedor {
+      width: 100%;
+    }
+    
+    .Surveys-item {
+        min-width: 245px;
+      
+    }
+  }
+  
