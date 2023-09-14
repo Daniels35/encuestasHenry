@@ -125,7 +125,7 @@ function SurveysDetail() {
               className='iconsSurveys' 
               onClick={saveChanges}
                />
-              <h1 className="surveys-button-close" onClick={() => handleCloseEdit('name')}>X</h1>
+              <h2 className="surveys-button-close" onClick={() => handleCloseEdit('name')}>X</h2>
             </ div>
                 </>
           ) : (
@@ -152,7 +152,7 @@ function SurveysDetail() {
                 onChange={(e) => setEditedEmail(e.target.value)}
                 />
               <AiFillHeart className='iconsSurveys' onClick={saveChanges} />
-              <h1 className="surveys-button-close" onClick={() => handleCloseEdit('email')}>X</h1>
+              <h2 className="surveys-button-close" onClick={() => handleCloseEdit('email')}>X</h2>
             </ div>
                 </>
           ) : (
@@ -205,7 +205,7 @@ function SurveysDetail() {
                   onChange={(e) => setEditedStartDate(e.target.value)}
                   />
                 <AiFillHeart className='iconsSurveys' onClick={saveChanges} />
-                <h1 className="surveys-button-close" onClick={() => handleCloseEdit('startDate')}>X</h1>
+                <h2 className="surveys-button-close" onClick={() => handleCloseEdit('startDate')}>X</h2>
               </div>
                   </>
             ) : (
@@ -233,7 +233,7 @@ function SurveysDetail() {
                     <option value="german">German</option>
                   </select>
                   <AiFillHeart className='iconsSurveys' onClick={saveChanges} />
-                  <h1 className="surveys-button-close" onClick={() => handleCloseEdit('language')}>X</h1>
+                  <h2 className="surveys-button-close" onClick={() => handleCloseEdit('language')}>X</h2>
                 </div>
                     </>
               ) : (
@@ -252,7 +252,8 @@ function SurveysDetail() {
                 <>
                   <p>Cómo nos encontraste:</p>
                 <div className='surveys-contenedor-edit'>
-                  <div>
+                  <div className='surveys-contenedor-edit-how'>
+                  <div >
                     <label>
                       <input
                         type="radio"
@@ -285,8 +286,9 @@ function SurveysDetail() {
                       Advertisement
                     </label>
                   </div>
-                  <AiFillHeart className='iconsSurveys' onClick={saveChanges} />
-                  <h1 className="surveys-button-close" onClick={() => handleCloseEdit('how_found')}>X</h1>
+                  <AiFillHeart className='iconsSurveys radioSave' onClick={saveChanges} />
+                  <h2 className="surveys-button-close radioClose" onClick={() => handleCloseEdit('how_found')}>X</h2>
+                  </div>                
                 </div>
                         </>
               ) : (
@@ -314,7 +316,7 @@ function SurveysDetail() {
                       Sí
                     </label>
                     <AiFillHeart className='iconsSurveys' onClick={saveChanges} />
-                    <h1 className="surveys-button-close" onClick={() => handleCloseEdit('newsletter')}>X</h1>
+                    <h2 className="surveys-button-close" onClick={() => handleCloseEdit('newsletter')}>X</h2>
                   </div>
                         </>
                 ) : (

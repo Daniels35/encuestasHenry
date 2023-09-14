@@ -45,7 +45,7 @@
     text-decoration: underline;
   }
 
-  .surveys-contenedor-edit {
+  .surveys-contenedor-edit, .surveys-contenedor-edit-how {
 display: inline-flex;
 align-items: center;
     
@@ -125,5 +125,25 @@ align-items: center;
         top: -500px;
         right: -120px;
     }
+    .surveys-contenedor-edit-how {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .radioSave {
+      font-size: 35px;
+      position: relative;
+      left: -40px;
+      top: 28px;
+      margin-top: -10px;
+    }
+
+    .radioClose {
+      position: relative;
+      top: -28px;
+      right: -30px;
+      margin-bottom: -15px;
+    }
+
   }
   
