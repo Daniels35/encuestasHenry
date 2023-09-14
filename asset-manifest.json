@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/encuestasHenry/static/css/main.0a0d5fb1.css",
-    "main.js": "/encuestasHenry/static/js/main.ae1dbc34.js",
+    "main.css": "/encuestasHenry/static/css/main.1e5a29ad.css",
+    "main.js": "/encuestasHenry/static/js/main.26e44e1b.js",
     "static/js/787.4e97cf77.chunk.js": "/encuestasHenry/static/js/787.4e97cf77.chunk.js",
     "index.html": "/encuestasHenry/index.html",
-    "main.0a0d5fb1.css.map": "/encuestasHenry/static/css/main.0a0d5fb1.css.map",
-    "main.ae1dbc34.js.map": "/encuestasHenry/static/js/main.ae1dbc34.js.map",
+    "main.1e5a29ad.css.map": "/encuestasHenry/static/css/main.1e5a29ad.css.map",
+    "main.26e44e1b.js.map": "/encuestasHenry/static/js/main.26e44e1b.js.map",
     "787.4e97cf77.chunk.js.map": "/encuestasHenry/static/js/787.4e97cf77.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a0d5fb1.css",
-    "static/js/main.ae1dbc34.js"
+    "static/css/main.1e5a29ad.css",
+    "static/js/main.26e44e1b.js"
   ]
 }
