@@ -101,6 +101,7 @@ function Home() {
                     required={item.required}
                     onChange={handleInputChange}
                     value={formData[item.name] || ''}
+                    maxlength="20"
                   />
                 ) : item.name === "email" ? (
                   <input
@@ -110,6 +111,7 @@ function Home() {
                     required={item.required}
                     onChange={handleInputChange}
                     value={formData[item.name] || ''}
+                    maxlength="30"
                   />
                 ) : item.type === "tel" ? (
                   <div className='input-home-phone-container'>
@@ -120,6 +122,7 @@ function Home() {
                       value={formData[item.name] || ''}
                       required={item.required}
                       onChange={(phone_number) => setFormData({ ...formData, phone_number })}
+                      maxlength="17"
                     />
                   </div>
                 ) : item.type === "date" ? (

@@ -120,6 +120,7 @@ function SurveysDetail() {
                 type="text"
                 value={editedName}
                 onChange={(e) => setEditedName(e.target.value)}
+                maxlength="20"
               />
               <AiFillHeart 
               className='iconsSurveys' 
@@ -150,6 +151,7 @@ function SurveysDetail() {
                 type="text"
                 value={editedEmail}
                 onChange={(e) => setEditedEmail(e.target.value)}
+                maxlength="30"
                 />
               <AiFillHeart className='iconsSurveys' onClick={saveChanges} />
               <h2 className="surveys-button-close" onClick={() => handleCloseEdit('email')}>X</h2>
@@ -175,6 +177,7 @@ function SurveysDetail() {
                   country={'us'}
                   value={editedNumber}
                   onChange={(value) => setEditedNumber(value)}
+                  maxlength="17"
                 />
                 <AiFillHeart className='iconsSurveys' onClick={saveChanges} />
                 <h2 className="surveys-button-close" onClick={() => handleCloseEdit('number')}>X</h2>
