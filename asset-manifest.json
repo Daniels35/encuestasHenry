@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/lasvipagina/static/css/main.08a7aa0b.css",
+    "main.js": "/lasvipagina/static/js/main.d7f7d944.js",
+    "static/js/787.4e97cf77.chunk.js": "/lasvipagina/static/js/787.4e97cf77.chunk.js",
+    "index.html": "/lasvipagina/index.html",
+    "main.08a7aa0b.css.map": "/lasvipagina/static/css/main.08a7aa0b.css.map",
+    "main.d7f7d944.js.map": "/lasvipagina/static/js/main.d7f7d944.js.map",
+    "787.4e97cf77.chunk.js.map": "/lasvipagina/static/js/787.4e97cf77.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08a7aa0b.css",
+    "static/js/main.d7f7d944.js"
+  ]
+}
