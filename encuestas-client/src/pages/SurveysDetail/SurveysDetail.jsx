@@ -51,10 +51,10 @@ function SurveysDetail() {
 
    const saveChanges = async () => {
 
-    if (!validateEmail(editedEmail)) {
+    if (isEmailEditMode && !validateEmail(editedEmail)) {
       window.alert('Correo electrónico no válido');
       return;
-    } 
+    }
 
     try {
       await fetch(`https://daniels35.com/encuestas/${id}`, {
