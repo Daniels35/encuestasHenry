@@ -37,5 +37,19 @@ export function formatDate(dateString) {
     }
     return phoneNumber;
   }
+
+  export function formatName(name) {
+    return name
+      .toLowerCase()
+      .split(' ')
+      .map((word) => word.charAt(0).toUpperCase() + word.substring(1))
+      .join(' ');
+  }
+
+  export function validateEmail(email) {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return emailRegex.test(email);
+  };
+  
   
   

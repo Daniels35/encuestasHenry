@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useLocation } from 'react-router-dom';
 import { AiFillEdit, AiFillHeart } from "react-icons/ai";
 import { Link } from 'react-router-dom';
-import { formatDate, formatDate2, capitalizeFirstLetter, maskEmail, maskPhoneNumber } from '../../components/utils/utils';
+import { formatDate, formatDate2, capitalizeFirstLetter, maskEmail, maskPhoneNumber, formatName, validateEmail } from '../../components/utils/utils';
 import  PhoneInput  from  'react-phone-number-input'; 
 import Modal from '../../components/Modal/Modal';
 import  'react-phone-number-input/style.css'; 
@@ -50,6 +50,12 @@ function SurveysDetail() {
     }, [id]);
 
    const saveChanges = async () => {
+
+    if (!validateEmail(editedEmail)) {
+      window.alert('Correo electrónico no válido');
+      return;
+    } 
+
     try {
       await fetch(`https://daniels35.com/encuestas/${id}`, {
         method: 'PUT',
@@ -118,7 +124,7 @@ function SurveysDetail() {
             <div className='surveys-contenedor-edit'>
               <input
                 type="text"
-                value={editedName}
+                value={formatName(editedName)}
                 onChange={(e) => setEditedName(e.target.value)}
                 maxlength="20"
               />

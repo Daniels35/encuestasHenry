@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import {  useNavigate } from 'react-router-dom';
 import  PhoneInput  from  'react-phone-number-input'; 
 import  'react-phone-number-input/style.css'; 
 import surveyData from './data';
+import {formatName, validateEmail} from '../../components/utils/utils';
 import './Home.css';
-import {  useNavigate } from 'react-router-dom';
 
 function Home() {
   const navigate = useNavigate()
@@ -41,6 +42,12 @@ function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    if (!validateEmail(formData.email)) {
+      window.alert('Correo electrónico no válido');
+      return;
+    }
+
     try {
       const response = await fetch('https://daniels35.com/recibir-encuesta', {
         method: 'POST',
@@ -102,7 +109,7 @@ function Home() {
                     name={item.name}
                     required={item.required}
                     onChange={handleInputChange}
-                    value={formData[item.name] || ''}
+                    value={formatName(formData[item.name] || '')}
                     maxlength="20"
                   />
                 ) : item.name === "email" ? (
