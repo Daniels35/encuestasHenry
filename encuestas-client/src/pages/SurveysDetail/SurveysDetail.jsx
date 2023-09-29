@@ -11,9 +11,11 @@ import './SurveysDetail.css';
 function SurveysDetail() {
   const { id } = useParams();
   const [encuesta, setEncuesta] = useState(null);
-  const location = useLocation();
-  let isRedirigido = location.state && location.state.redirigido;
+  let location = useLocation();
+  let isRedirigido = location.state;
 
+  console.log("El usuario viene de inicio: ", encuesta);
+  console.log("El usuario location: ", location);
   console.log("El usuario viene de inicio: ", isRedirigido);
 
     const [isNameEditMode, setIsNameEditMode] = useState(false);
@@ -31,6 +33,8 @@ function SurveysDetail() {
     const [isNewsletterEditMode, setIsNewsletterEditMode] = useState(false);
     const [editedNewsletterSubscription, setEditedNewsletterSubscription] = useState(false);
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [userEmail, setUserEmail] = useState('');
+
 
     const loadEncuestaDetails = async () => {
       try {
@@ -112,6 +116,16 @@ function SurveysDetail() {
     }
   }
 
+  const checkUserEmail = () => {
+    if (encuesta.email === userEmail) {
+      location.state = true;
+      window.alert('El correo electrónico ingresado coincide con el de la encuesta, puedes editarla.');
+      setIsModalVisible(false);
+    } else {
+      window.alert('El correo electrónico ingresado no coincide con el de la encuesta.');
+    }
+  };
+  
   return (
     
     <div className="SurveysDetail-container">
@@ -202,8 +216,6 @@ function SurveysDetail() {
               />)}
             </>
           )}
-
-
             {isStartDateEditMode ? (
               <>
                 <p>Fecha de inicio:</p>
@@ -342,18 +354,18 @@ function SurveysDetail() {
             <Modal isVisible={isModalVisible} onClose={() => setIsModalVisible(false)}>
               <h3>Enviar correo</h3>
               <p>
-                Si envías tu correo electrónico y coincide con la encuesta, te enviaremos un enlace al correo para poder editar tu encuesta.
+                Si ingresas el correo electrónico y coincide con la encuesta, podrás editar la encuesta.
               </p>
               <input
                 type="email"
                 placeholder="Tu correo electrónico"
-                value={''}
+                value={userEmail}
                 className='input-survey-modal'
+                onChange={(e) => setUserEmail(e.target.value)}
               />
               <br></br>
-              <button className='button-survey-modal' >Enviar</button>
+              <button className='button-survey-modal' onClick={checkUserEmail}>Enviar</button>
             </Modal>
-
         </>
            )}
       
