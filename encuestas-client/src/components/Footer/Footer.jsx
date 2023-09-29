@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import "./Footer.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import namesData from "./namesData";
 import { Link } from 'react-router-dom';
+import "./Footer.css";
 
 const Footer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

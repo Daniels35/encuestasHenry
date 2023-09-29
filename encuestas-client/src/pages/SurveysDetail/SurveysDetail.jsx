@@ -345,7 +345,7 @@ function SurveysDetail() {
                 )}
           <p>Fecha: {formatDate(encuesta.created_at)}</p>
           {!isRedirigido && (
-       <>
+          <>
             <AiFillEdit className='button-surveyEdit-not' onClick={() => setIsModalVisible(true)}/>
             <Modal isVisible={isModalVisible} onClose={() => setIsModalVisible(false)}>
               <h3>Enviar correo</h3>
@@ -362,9 +362,16 @@ function SurveysDetail() {
               <br></br>
               <button className='button-survey-modal' onClick={checkUserEmail}>Enviar</button>
             </Modal>
-        </>
+         </>
            )}
-      
+            {isRedirigido ? (
+              <div className='info-surveys-detail-footer'>
+                <AiFillHeart className='iconsSurveys info-surveys-detail-buttonSave' />
+                <span>Guardar</span>
+                <h2 className="surveys-button-close info-surveys-detail-buttonCancel">X</h2>
+                <span>Cancelar edición</span>
+              </div>
+            ) : null}
         </div>
       ) : (
         <p>Los detalles de la encuesta no están disponibles.</p>
