@@ -14,10 +14,6 @@ function SurveysDetail() {
   let location = useLocation();
   let isRedirigido = location.state;
 
-  console.log("El usuario viene de inicio: ", encuesta);
-  console.log("El usuario location: ", location);
-  console.log("El usuario viene de inicio: ", isRedirigido);
-
     const [isNameEditMode, setIsNameEditMode] = useState(false);
     const [editedName, setEditedName] = useState('');
     const [isEmailEditMode, setIsEmailEditMode] = useState(false);

@@ -25,13 +25,11 @@ function Home() {
     const { name, value, type, checked } = e.target;
     
     if (type === 'checkbox') {
-      console.log(`Campo ${name} marcado: ${checked}`);
       setFormData((prevData) => ({
         ...prevData,
         [name]: checked,
       }));
     } else {
-      console.log(`Campo ${name} valor cambiado a: ${value}`);
       setFormData((prevData) => ({
         ...prevData,
         [name]: value,
@@ -58,11 +56,9 @@ function Home() {
       });
 
       if (response.ok) {
-        console.log('Encuesta enviada con éxito');
         window.alert("Encuesta enviada con éxito, pronto recibirás un correo electrónico con tus respuestas, te vamos a redirigir a tu encuesta.");
         const data = await response.json();
         navigate(`/encuestasHenry/encuestas/${data.insertedId}`, { state: { redirigido: true } });
-        console.log("Id de la encuesta: ", data.insertedId)
       } else {
         console.error('Error al enviar la encuesta al servidor');
       }
@@ -70,12 +66,10 @@ function Home() {
       console.error('Error al realizar la solicitud:', error);
       return;
     }
-    console.log("Datos del formulario enviados:", formData);
     clearForm();
   };
 
   const clearForm = () => {
-    console.log("Clic en borrar");
     const fieldsToPreserve = ['how_found', 'newsletter_subscription'];
     const emptyFormData = {};
     for (const key in formData) {
@@ -86,7 +80,6 @@ function Home() {
       }
     }
     setFormData(emptyFormData);
-    console.log(formData);
   };
 
   return (

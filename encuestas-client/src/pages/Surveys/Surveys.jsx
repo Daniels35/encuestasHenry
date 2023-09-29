@@ -7,8 +7,6 @@ function Surveys() {
   const [encuestas, setEncuestas] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  console.log("Datos encuestas: ", encuestas);
-
   useEffect(() => {
     fetch('https://daniels35.com/encuestas')
       .then((response) => response.json())
