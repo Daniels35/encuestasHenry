@@ -1,6 +1,6 @@
 # Encuestas Henry 📊
 
-Este es un emocionante proyecto que desarrollé para el desafío técnico de Henry, una plataforma de educación en línea. El objetivo principal era crear una aplicación web de encuestas, donde los usuarios pueden crear, editar y visualizar los resultados de encuestas de manera fácil y eficiente. La aplicación se ha desarrollado utilizando React en el frontend y Node.js en el backend, y puedes verla en acción en GitHub Pages.
+Este proyecto que desarrollé para el desafío técnico de Henry, una plataforma de educación en línea. El objetivo principal era crear una aplicación web de encuestas, donde los usuarios pueden crear, editar y visualizar los resultados de encuestas de manera fácil y eficiente. La aplicación se ha desarrollado utilizando React en el frontend y Node.js en el backend, y puedes verla en acción en [https://daniels35.github.io/encuestasHenry/](https://daniels35.github.io/encuestasHenry/).
 
 ## Descripción 🚀
 
@@ -29,6 +29,3 @@ La aplicación permite realizar las siguientes acciones:
 📝 Editar Encuestas.
 
 👀 Visualizar Encuestas: Explora las encuestas creadas por ti o por otros usuarios. Utiliza filtros de fecha para encontrar rápidamente las encuestas que te interesan.
-
-Prueba la Aplicación en Vivo 🌐
-Si deseas experimentar con la aplicación y verla en acción, puedes acceder a ella en línea a través de [GitHub Pages](https://daniels35.github.io/encuestasHenry/).
