@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encuesta Realizada</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: rgba(0,0,0,.95); color: white;">
+    <header class="header" style="background-image: url('https://res.cloudinary.com/dpnj2pchu/image/upload/v1695860805/zk63wlloyxn9sfrkvxnz.png'); background-size: contain; background-repeat: no-repeat; width: 100%; height: 15rem; background-color: #ffff01;">
+    </header>
+    <main style="padding: 20px; text-align: center; line-height: 1.5;">
+        <div>
+            <h1 style="margin-bottom: 30px; text-align: center; color: white;">Encuesta Realizada</h1>
+        </div>
+        <div class="saludo" style="text-align: justify; margin: 0 20px 0 20px; color: white;">
+            <h2>Hola {{full_name}}, estas son las respuestas de la encuesta recién realizada con el formulario de Daniel Díaz.</h2>
+        </div>
+        <div class="cuerpoDatos" style="text-align: center; color: white;">
+            <h3>Nombre completo:</h3>
+            <p>{{full_name}}</p>
+            <h3>Email:</h3>
+            <p>{{email}}</p>
+            <h3>Número de teléfono:</h3>
+            <p>{{phone_number}}</p>
+            <h3>Fecha de inicio:</h3>
+            <p>{{start_date}}</p>
+            <h3>¿Cuál es tu idioma preferido?:</h3>
+            <p>{{preferred_language}}</p>
+            <h4>¿Cómo nos encontraste?:</h4>
+            <p>{{how_found}}</p>
+        </div>
+        <div class="editarDatos" style="margin-top: 3rem; margin-bottom: 2rem; color: #ffff01; font-weight: bold; opacity: 0.9; text-align: center;">
+            <h5>Si quieres editar la encuesta recién creada, <a href="https://daniels35.github.io/encuestasHenry/encuestas/{{id}}?redirigido=true" target="_blank" style="color: #ffff01; text-decoration: underline;">puedes dar clic aquí.</a></h5>
+        </div>
+    </main>
+    <footer style="background-color: rgba(0,0,0,.75); color: #fff; width: 100%; height: 20rem; font-weight: 700; text-align: center;">
+        <p style="opacity: 0.0;">Hola</p>
+        <div class="contenedorFooter" style="margin-top: 1rem;">
+            <a href="https://daniels35.com/" target="_blank" style="text-decoration: none; color: #fff;">Made by Daniel Diaz</a>
+        </div>
+        <br>
+        <div class="redesSociales">
+            <a href="https://github.com/Daniels35" target="_blank" style="margin: 0 1rem 0 1rem; transition: transform 0.2s; text-decoration: none;">
+                <img src="https://res.cloudinary.com/dpnj2pchu/image/upload/v1695860805/yfd8jhfjxnenei7bzblr.png" alt="GitHub" style="height: 5rem; width: 5rem;">
+            </a>
+            <a href="https://linkedin.com/in/danielsdiaz35" target="_blank" style="margin: 0 1rem 0 1rem; transition: transform 0.2s; text-decoration: none;">
+                <img src="https://res.cloudinary.com/dpnj2pchu/image/upload/v1695860805/x77xvck5gfl8colxhvsv.png" alt="LinkedIn" style="height: 5rem; width: 5rem;">
+            </a>
+        </div>
+        <br>
+        <div style="text-align: center; margin-bottom: 1rem;">
+                <p style="margin-bottom: 1rem;">Henry &copy; 2023</p>
+            </div>
+            <div>
+                <p style="opacity: 0.0;">Hola</p>
+            </div>
+    </footer> 
+</body>
+</html>

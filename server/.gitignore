@@ -1,0 +1,8 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos de configuración con información sensible, como las credenciales de la base de datos
+.env
+
+# Ignorar package-lock.json
+package-lock.json
